@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="tr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keşfet Sakarya</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Favicon (Sakarya Haritası İkonu) -->
+    <link rel="icon" href="img/river-svgrepo-com.ico">
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Header / Navigasyon Barı -->
+    <header id="header" class="bg-white/80 backdrop-blur-md fixed top-0 left-0 right-0 z-50 shadow-sm transition-all duration-300">
+        <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <!-- Logo -->
+            <a href="#" class="flex items-center space-x-2">
+                <img src="img/river-svgrepo-com.svg" class="h-8 w-8 text-blue-600" alt="">
+                <span class="text-xl font-bold text-gray-800">Keşfet Sakarya</span>
+            </a>
+            
+            <!-- Masaüstü Navigasyon -->
+            <nav class="hidden md:flex space-x-8">
+                <a href="#tarih" class="nav-link text-gray-600 hover:text-blue-600 transition-colors">Tarihi</a>
+                <a href="#cografya" class="nav-link text-gray-600 hover:text-blue-600 transition-colors">Coğrafyası</a>
+                <a href="#gezilecek" class="nav-link text-gray-600 hover:text-blue-600 transition-colors">Gezilecek Yerler</a>
+                <a href="#dogal" class="nav-link text-gray-600 hover:text-blue-600 transition-colors">Doğal Güzellikler</a>
+                <a href="#ortak" class="nav-link text-gray-600 hover:text-blue-600 transition-colors">İş Ortakları</a>
+                <a href="#lezzetler" class="nav-link text-gray-600 hover:text-blue-600 transition-colors">Lezzetleri</a>
+            </nav>
+
+            <!-- Mobil Menü Butonu -->
+            <button id="mobile-menu-button" class="md:hidden text-gray-700 focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </div>
+
+        <!-- Mobil Menü -->
+        <div id="mobile-menu" class="hidden md:hidden px-6 pt-2 pb-4">
+            <a href="#tarih" class="block py-2 text-gray-600 hover:text-blue-600">Tarihi</a>
+            <a href="#cografya" class="block py-2 text-gray-600 hover:text-blue-600">Coğrafyası</a>
+            <a href="#gezilecek" class="block py-2 text-gray-600 hover:text-blue-600">Gezilecek Yerler</a>
+            <a href="#dogal" class="block py-2 text-gray-600 hover:text-blue-600">Doğal Güzellikler</a>
+            <a href="#ortak" class="block py-2 text-gray-600 hover:text-blue-600">İş Ortakları</a>
+            <a href="#lezzetler" class="block py-2 text-gray-600 hover:text-blue-600">Lezzetleri</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Ana Karşılama Bölümü -->
+        <section id="hero" class="h-screen flex items-center justify-center bg-cover bg-center" style="background-image: url('img/sapancagölü.jpeg');">
+            <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+            <div class="text-center z-10 px-4">
+                <h1 class="text-5xl md:text-7xl font-bold text-white leading-tight mb-4">Keşfet Sakarya</h1>
+                <p class="text-xl md:text-2xl text-gray-200">Marmara'nın Yeşil İncisi</p>
+            </div>
+        </section>
+
+        <!-- Bölüm: Tarih -->
+        <section id="tarih" class="py-20 md:py-24">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-gray-800">Tarihin İzinde Sakarya</h2>
+                <div class="flex flex-col md:flex-row items-center gap-12">
+                    <div class="md:w-1/2">
+                        <img src="img/köprü.jpeg" alt="Justinianus Köprüsü" class="rounded-lg shadow-xl w-full">
+                    </div>
+                    <div class="md:w-1/2">
+                        <h3 class="text-2xl font-semibold mb-4 text-blue-700">Justinianus Köprüsü (Beşköprü)</h3>
+                        <p class="text-lg text-gray-600 leading-relaxed">
+                            Sakarya'nın en önemli tarihi miraslarından biri, Geç Roma Dönemi'ne ait olan Justinianus Köprüsü'dür. 562 yılında Bizans İmparatoru Justinianus tarafından yaptırılan bu taş köprü, 365 metre uzunluğu ve 12 kemeriyle görkemli bir yapıdır. Sapanca Gölü'nün sularını Sakarya Nehri'ne taşıyan Çark Deresi üzerine inşa edilmiştir ve günümüzde hala ayaktadır.
+                        </p>
+                        <p class="text-lg text-gray-600 leading-relaxed mt-4">
+                            Şehir, Osmanlı döneminde de önemli bir yerleşim yeri olmuş, Kurtuluş Savaşı'nda stratejik bir rol oynamıştır. Sakarya Meydan Muharebesi, Türk tarihi için bir dönüm noktasıdır.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bölüm: Coğrafya -->
+        <section id="cografya" class="py-20 md:py-24 bg-white">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-gray-800">Doğa ve Coğrafya</h2>
+                <div class="flex flex-col md:flex-row-reverse items-center gap-12">
+                    <div class="md:w-1/2">
+                        <img src="img/ovalar.jpg" alt="Sakarya Nehri" class="rounded-lg shadow-xl w-full">
+                    </div>
+                    <div class="md:w-1/2">
+                        <h3 class="text-2xl font-semibold mb-4 text-teal-700">Nehirler, Göller ve Verimli Topraklar</h3>
+                        <p class="text-lg text-gray-600 leading-relaxed">
+                           Sakarya, adını Türkiye'nin en uzun üçüncü nehri olan Sakarya Nehri'nden alır. Karadeniz'e dökülen bu nehir, şehrin tarımını besleyen en önemli kaynaktır. Verimli alüvyal topraklar üzerinde kurulu olan Sakarya Ovası, mısır, fındık, ayva gibi birçok ürünün yetiştiği bereketli bir bölgedir.
+                        </p>
+                        <p class="text-lg text-gray-600 leading-relaxed mt-4">
+                           Aynı zamanda Sapanca Gölü gibi tektonik bir göle ev sahipliği yapar ve Karadeniz'e kıyısı bulunur. Bu coğrafi çeşitlilik, Sakarya'yı hem tarım hem de turizm açısından zengin kılar.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bölüm: Gezilecek Yerler -->
+        <section id="gezilecek" class="py-20 md:py-24">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-gray-800">Mutlaka Görülmesi Gereken Yerler</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Kart 1: Sapanca Gölü -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300">
+                        <img src="img/sapanca2.jpeg" alt="Sapanca Gölü" class="w-full h-56 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-2">Sapanca Gölü</h3>
+                            <p class="text-gray-600">Huzur dolu manzarası, etrafındaki yürüyüş parkurları ve kafeleriyle şehrin en popüler kaçış noktasıdır.</p>
+                        </div>
+                    </div>
+                    <!-- Kart 2: Taraklı -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300">
+                        <img src="img/taraklıevleri.jpeg" alt="Taraklı" class="w-full h-56 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-2">Taraklı</h3>
+                            <p class="text-gray-600">"Sakin Şehir" (Cittaslow) unvanına sahip, Osmanlı mimarisini yansıtan tarihi evleriyle zamanda yolculuk hissi verir.</p>
+                        </div>
+                    </div>
+                    <!-- Kart 3: Poyrazlar Gölü -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300">
+                        <img src="img/poyrazlar.jpeg" alt="Poyrazlar Gölü" class="w-full h-56 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-2">Poyrazlar Gölü</h3>
+                            <p class="text-gray-600">Doğayla iç içe piknik yapmak, bisiklete binmek ve deniz bisikletiyle gezmek için ideal bir tabiat parkıdır.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bölüm: Doğal Güzellikler -->
+        <section id="dogal" class="py-20 md:py-24 bg-white">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-gray-800">Sakarya'nın Doğal Hazineleri</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Kart 1: Acarlar Longozu -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300">
+                        <img src="img/acarlar.jpeg" alt="Acarlar Longozu" class="w-full h-56 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-2">Acarlar Longozu</h3>
+                            <p class="text-gray-600">Türkiye'nin en büyük ikinci subasar (longoz) ormanıdır. Nilüfer çiçekleri ve zengin kuş popülasyonu ile ünlüdür.</p>
+                        </div>
+                    </div>
+                    <!-- Kart 2: Maden Deresi -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300">
+                        <img src="img/madenderesi.jpg" alt="Maden Deresi" class="w-full h-56 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-2">Maden Deresi ve Şelalesi</h3>
+                            <p class="text-gray-600">Serin suları, yürüyüş yolları ve sonunda ulaşılan şelalesiyle yaz aylarında serinlemek için harika bir yerdir.</p>
+                        </div>
+                    </div>
+                    <!-- Kart 3: Dikmen Yaylası -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300">
+                        <img src="img/dikmenyaylası.jpg" alt="Dikmen Yaylası" class="w-full h-56 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-2">Dikmen Yaylası</h3>
+                            <p class="text-gray-600">Sakarya'nın en yüksek noktasıdır. Muhteşem manzarası ve temiz havasıyla doğa tutkunlarını kendine çeker.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bölüm: Gezilecek Yerler -->
+        <section id="ortak" class="py-20 md:py-24">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-gray-800">İş Ortakları</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Kart 1: Sapanca Gölü -->
+                    <a href="https://bilecikkentrehberi.vercel.app/" target="_blank"><div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300">
+                        <img src="img/ortak1.jpg" alt="Bilecik Kent Rehberi" class="w-full h-56 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-2">Bilecik Kent Rehberi</h3>
+                            <p class="text-gray-600">Bilecik şehrinin tarihini,doğal güzelliklerini ve kültürünü anlatan bir sayfa.
+                            </p>
+                        </div>
+                    </div></a>
+                    <!-- Kart 2: Taraklı -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300">
+                        <img src="img/yeniortak.png" alt="Yeni Ortak Lazım" class="w-full h-56 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-2">Yeni Ortak Aranıyor</h3>
+                            <p class="text-gray-600"></p>
+                        </div>
+                    </div>
+                    <!-- Kart 3: Poyrazlar Gölü -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300">
+                        <img src="img/yeniortak.png" alt="Yeni Ortak Lazım" class="w-full h-56 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-2">Yeni Ortak Aranıyor</h3>
+                            <p class="text-gray-600"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bölüm: Sakarya Lezzetleri -->
+        <section id="lezzetler" class="py-20 md:py-24">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-gray-800">Sakarya Mutfağı</h2>
+                <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10">
+                    <div class="flex items-start space-x-6">
+                        <img src="img/köfte.jpeg" alt="Islama Köfte" class="w-28 h-28 rounded-full shadow-md object-cover flex-shrink-0">
+                        <div>
+                            <h3 class="text-xl font-semibold text-orange-600">Islama Köfte</h3>
+                            <p class="text-gray-600 mt-2">Kemik suyuna batırılmış ve kızartılmış ekmek dilimleri üzerinde servis edilen, Sakarya'nın imzası niteliğindeki lezzeti.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start space-x-6">
+                         <img src="img/kabaktatlısı.jpeg" alt="Kabak Tatlısı" class="w-28 h-28 rounded-full shadow-md object-cover flex-shrink-0">
+                        <div>
+                            <h3 class="text-xl font-semibold text-amber-600">Kabak Tatlısı</h3>
+                            <p class="text-gray-600 mt-2">Adapazarı'nın meşhur kestane kabağından yapılan, üzerine tahin ve ceviz dökülerek yenen geleneksel tatlı.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white">
+        <div class="container mx-auto px-6 py-8 text-center">
+            <p>&copy; 2025 Keşfet Sakarya. Tüm hakları saklıdır.</p>
+        </div>
+    </footer>
+
+
+    <script>
+        // Mobil menü açma/kapama fonksiyonu
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Navigasyon linklerine tıklandığında menüyü kapatma (mobil için)
+        const navLinks = document.querySelectorAll('#mobile-menu a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Sayfa kaydırıldığında aktif bölümü navigasyonda işaretleme
+        const sections = document.querySelectorAll('section');
+        const desktopNavLinks = document.querySelectorAll('#header nav a');
+
+        const options = {
+            root: null, // viewport
+            rootMargin: '0px',
+            threshold: 0.6 // Bölümün %60'ı göründüğünde aktif olsun
+        };
+
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    desktopNavLinks.forEach(link => {
+                        link.classList.remove('active');
+                        if (link.getAttribute('href').substring(1) === entry.target.id) {
+                            link.classList.add('active');
+                        }
+                    });
+                }
+            });
+        }, options);
+
+        sections.forEach(section => {
+            observer.observe(section);
+        });
+
+    </script>
+</body>
+</html>

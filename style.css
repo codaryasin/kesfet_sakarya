@@ -1,0 +1,13 @@
+/* Özel fontları tanımlama */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f8fafc; /* Açık gri arkaplan */
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+}
+/* Aktif navigasyon linki stili */
+.nav-link.active {
+    color: #2563eb;
+    font-weight: 600;
+}
